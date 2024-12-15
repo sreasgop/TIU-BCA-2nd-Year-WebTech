@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Name</title>
+    <script>
+        function concat() {
+            // Accessing the form elements via document.forms
+            let a = document.forms["myform"]["textFn"].value;
+            let b = document.forms["myform"]["textSn"].value;
+
+            // Concatenating the inputs and setting the result
+            document.forms["myform"]["textSum"].value = a + " " + b; // Adding a space between names
+        }
+    </script>
+</head>
+<body>
+    <h2>Concatenate Full Name</h2>
+    <form name="myform">
+        <label for="textFn">Enter first name:</label><br>
+        <input type="text" name="textFn" id="textFn"><br><br>
+
+        <label for="textSn">Enter second name:</label><br>
+        <input type="text" name="textSn" id="textSn"><br><br>
+
+        <input type="button" value="Concat" onclick="concat()"><br><br>
+
+        <label for="textSum">The full name is:</label><br>
+        <input type="text" name="textSum" id="textSum" readonly> <!-- Set readonly -->
+    </form>
+</body>
+</html>
