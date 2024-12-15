@@ -1,0 +1,26 @@
+<!-- 02. Write a webpage using frameset to import 3 webpages: left, right and middle. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Assignment</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <iframe name="left" src="Assets/Html.html"></iframe>
+    <iframe name="middle" src="Assets/CSS.html"></iframe>
+    <iframe name="right" src="Assets/JavaScript.html"></iframe>
+</body>
+</html>
